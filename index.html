@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-300 h-screen flex justify-center items-center">
+    <form class="bg-white w-[30%] p-7 round-[10px] shadow-md">
+      <h1 class="text-center text-3xl font-bold text-gray-700 bg-blue-500 p-10">
+        Faça seu Login
+      </h1>
+      <div class="flex flex-col gap-2">
+        <label for="email" class="text-xs text-gray-300">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="border-1 border-gray-300 p-3 round-xl text-sm"
+        />
+      </div>
+      <div class="flex flex-col gap-2">
+        <label for="senha" class="text-xs text-gray-300">senha</label>
+        <input type="password" name="senha" id="senha" />
+      </div>
+      <div id="container-checkbox">
+        <div class="flex flex-col gap-2">
+          <input type="checkbox" name="Lembrar" id="Lembrar" />
+          <label for="Lembrar" class="text-xs text-gray-300">Lembrar-me</label>
+        </div>
+
+        <a href="Esqueceu a senha"></a>
+      </div>
+
+      <button type="submit">Entrar</button>
+
+      <p>
+        Não possui uma conta?
+        <a href="Cadastre-se"></a>
+      </p>
+    </form>
+  </body>
+</html>
